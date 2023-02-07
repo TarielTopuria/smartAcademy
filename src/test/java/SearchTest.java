@@ -1,3 +1,4 @@
+import DataObject.SearchData;
 import PageObject.SearchPage;
 import StepObject.SearchSteps;
 import Utilis.ChromeRunner;
@@ -8,7 +9,7 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchTest extends ChromeRunner implements SearchPage {
+public class SearchTest extends ChromeRunner implements SearchPage, SearchData {
     SearchSteps steps = new SearchSteps();
 
     @Test(priority = 1)
@@ -25,7 +26,7 @@ public class SearchTest extends ChromeRunner implements SearchPage {
     public void searchWithValidData(){
         steps
                 .inputValidData();
-        Assert.assertTrue(resultItemTitles.is(Condition.text("კალამი ბურთულიანი")));
+        Assert.assertTrue(resultItemTitles.is(Condition.text(validResultsCheck)));
     }
 
     @Test(priority = 3)
@@ -34,6 +35,6 @@ public class SearchTest extends ChromeRunner implements SearchPage {
     public void searchWithInvalidData(){
         steps
                 .inputInvalidData();
-        Assert.assertTrue(searchResults.is(Condition.text("ვერაფერი მოიძებნა")));
+        Assert.assertTrue(searchResults.is(Condition.text(invalidResultsCheck)));
     }
 }

@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class ChromeRunner implements Common {

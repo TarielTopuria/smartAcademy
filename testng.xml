@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="officemart.ge Test Suite" verbose="1" thread-count="1" parallel="tests">
+    <test name="officemart.ge Search function" parallel="tests">
+        <classes>
+            <class name="SearchTest"/>
+        </classes>
+    </test>
+    <test name="officemart.ge Cart Page" parallel="tests">
+        <classes>
+            <class name="CartTest"/>
+        </classes>
+    </test>
+</suite>
