@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="setting up the environment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepObject/SearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
+    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="added test cases for search function.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataObject/SearchData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StepObject/CartSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepObject/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepObject/SearchSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilis/ChromeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilis/ChromeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +44,37 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/TTopuria/IdeaProjects/smartAcademy&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SearchTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TTopuria\IdeaProjects\smartAcademy" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml">
+    <configuration name="C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="smartAcademy" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="smartAcademy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="smartAcademy" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,6 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" />
+        <item itemvalue="TestNG.CartTest" />
         <item itemvalue="TestNG.SearchTest" />
         <item itemvalue="TestNG.SearchTest.searchWithValidData" />
       </list>
@@ -90,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675714617168</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added test cases for search function.">
+      <created>1675773343067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675773343067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setting up the environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up the environment" />
+    <MESSAGE value="added test cases for search function." />
+    <option name="LAST_COMMIT_MESSAGE" value="added test cases for search function." />
   </component>
 </project>
