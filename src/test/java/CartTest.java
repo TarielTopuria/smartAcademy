@@ -69,4 +69,31 @@ public class CartTest extends ChromeRunner implements CartPage {
         Assert.assertTrue(itemFullPrice.isDisplayed(), "Verify that product full price is displayed");
         Assert.assertTrue(itemFullPrice.is(Condition.not(Condition.empty)), "Verify that product full price is not empty");
     }
+
+    @Test(priority = 8)
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Positive test case: Checking that after increasing the quantity of the product, its full and total prices increases proportionally.")
+    public void checkIncreasedPrice(){
+        steps.increaseQuantity();
+        Assert.assertEquals(steps.getActualPrice() * 2, steps.getFullPrice(), "Verify that after increasing the quantity of the product by one, its full price increases proportionally");
+        Assert.assertEquals(steps.getActualPrice() * 2, steps.getTotalPrice(), "Verify that after increasing the quantity of the product by one, its total price increases proportionally");
+    }
+
+    @Test(priority = 9)
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Positive test case: Checking that after decreasing the quantity of the product, its full and total prices decreases proportionally.")
+    public void checkDecreasedPrice(){
+        steps.decreaseQuantity();
+        Assert.assertEquals(steps.getActualPrice(), steps.getFullPrice(), "Verify that after decreasing the quantity of the product by one, its full price decreases proportionally");
+        Assert.assertEquals(steps.getActualPrice(), steps.getTotalPrice(), "Verify that after decreasing the quantity of the product by one, its total price decreases proportionally");
+    }
+
+    @Test(priority = 10)
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Positive test case: Checking that the product can be deleted by clicking on the \"X\" button.")
+    public void checkProductRemoval(){
+        steps.deleteProduct();
+        sleep(200);
+        Assert.assertEquals(steps.getTotalPrice(), 0,"Verify that the product can be deleted by clicking on the \"X\" button.");
+    }
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="added test cases for cart page.">
+    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="updated pom.xml and workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepObject/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepObject/CartSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
       <recent name="C:\Users\TTopuria\IdeaProjects\smartAcademy" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml">
+  <component name="RunManager" selected="TestNG.CartTest">
     <configuration name="C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="smartAcademy" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -93,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" />
         <item itemvalue="TestNG.CartTest" />
+        <item itemvalue="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" />
         <item itemvalue="TestNG.SearchTest" />
         <item itemvalue="TestNG.SearchTest.searchWithValidData" />
       </list>
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675795583516</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated pom.xml and workspace.xml">
+      <created>1675796376652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675796376652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +164,7 @@
     <MESSAGE value="setting up the environment" />
     <MESSAGE value="added test cases for search function." />
     <MESSAGE value="added test cases for cart page." />
-    <option name="LAST_COMMIT_MESSAGE" value="added test cases for cart page." />
+    <MESSAGE value="updated pom.xml and workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated pom.xml and workspace.xml" />
   </component>
 </project>
