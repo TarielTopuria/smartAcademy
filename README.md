@@ -1,7 +1,7 @@
-# Test Automation Project for https://officemart.ge/ge web page.
+# Test Automation Project for https://officemart.ge web page.
 This is a test automation project where IntelliJ IDEA, Java 11, Maven, Selenide, TestNG, and Allure is used. 
 
-The purpose of this project is to automate testing for the https://officemart.ge/ge web page.
+The purpose of this project is to automate testing for the https://officemart.ge web page.
 
 ## Getting Started
 To get started with this project, you will need to have the following tools installed on your system:
@@ -45,4 +45,4 @@ This will generate the reports and open them in your default browser. You can al
 This will generate the reports in the "target/site/allure-maven-plugin" directory.
 
 ## Conclusion
-This test automation project is a great way to get started with test automation using Java, Selenide, TestNG, and Allure. With this tools and frameworks, it is easy write automated tests for web application like https://officemart.ge/ge, and generate reports to track the progress.
+This test automation project is a great way to get started with test automation using Java, Selenide, TestNG, and Allure. With this tools and frameworks, it is easy write automated tests for web application like https://officemart.ge, and generate reports to track the progress.
