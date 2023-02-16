@@ -1,4 +1,4 @@
-# Test Automation Project
+# Test Automation Project for https://officemart.ge/ge web page.
 This is a test automation project where IntelliJ IDEA, Java 11, Maven, Selenide, TestNG, and Allure is used. 
 
 The purpose of this project is to automate testing for the https://officemart.ge/ge web page.
