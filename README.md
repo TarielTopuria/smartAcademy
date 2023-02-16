@@ -1,12 +1,12 @@
 # Test Automation Project for https://officemart.ge web page
-This is a test automation project where IntelliJ IDEA, Java 11, Maven, Selenide, TestNG, and Allure is used. 
+This is a test automation project where IntelliJ IDEA, Java 17, Maven, Selenide, TestNG, and Allure is used. 
 
 The purpose of this project is to automate testing for the https://officemart.ge web page.
 
 ## Getting Started
 To get started with this project, you will need to have the following tools installed on your system:
 
-* Java 11 or higher;
+* JDK;
 * Maven;
 * Any Integrated Development Environment (IDE);
 * Chrome and Chromedriver (UI tests use Chrome by default, but can be changed).
