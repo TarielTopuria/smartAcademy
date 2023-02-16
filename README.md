@@ -36,11 +36,11 @@ You can also run a specific test class or test method by specifying the class or
 ## Generating Reports
 This project uses Allure to generate reports for the tests. To generate the reports, you can use the following command:
 
-`mvn allure serve`
+`allure serve`
 
 This will generate the reports and open them in your default browser. You can also generate the reports in a specific directory using the following command:
 
-`mvn allure report`
+`allure report`
 
 This will generate the reports in the "target/site/allure-maven-plugin" directory.
 
