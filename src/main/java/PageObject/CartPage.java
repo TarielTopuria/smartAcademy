@@ -20,5 +20,14 @@ public interface CartPage {
         decreaseBtn = $(By.xpath("/html/body/div[5]/div/div[3]/div[5]/div/button[2]")),
         deleteProdBtn = $(By.xpath("/html/body/div[5]/div/div[3]/div[1]/button")),
         totalPrice = $(By.id("totalPrice")),
-        productDescription = $(By.xpath("/html/body/div[5]/div/div[3]/div[2]"));
+        productBtn = $(By.linkText("პროდუქცია")),
+        medicineBtn = $(By.linkText("სამედიცინო სახარჯი მასალა")),
+        glovesBtn = $(By.linkText("სამედიცინო ხელთათმანები")),
+        glovesAddCart = $(By.xpath("/html/body/div[5]/div/div[2]/div/div[2]/div[3]/div[2]/div[2]")),
+        glovesAddCart2 = $(By.xpath("/html/body/div[5]/div/div[2]/div/div[3]/div[3]/div[2]/div[2]")),
+        clearCartBtn = $(By.linkText("კალათის გასუფთავება")),
+        emptyCartText = $(By.className("emptyCart")),
+        continuePurchaseBtn = $(By.linkText("გაგრძელება")),
+        juridicalPersonTxt = $(By.id("pis")),
+        physicalPersonTxt = $(By.id("iur"));
 }

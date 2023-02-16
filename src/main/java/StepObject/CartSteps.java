@@ -50,4 +50,41 @@ public class CartSteps implements CartPage {
         deleteProdBtn.click();
         return this;
     }
+
+    @Step("Go to product section")
+    public CartSteps goToProducts(){
+        productBtn.click();
+        return this;
+    }
+
+    @Step("Go to medical products section")
+    public CartSteps goToMedicinePage(){
+        medicineBtn.click();
+        return this;
+    }
+
+    @Step("Go to gloves section")
+    public CartSteps goToGloves(){
+        glovesBtn.click();
+        return this;
+    }
+
+    @Step("Add Gloves to Cart")
+    public CartSteps addGloves(){
+        glovesAddCart.click();
+        glovesAddCart2.click();
+        return this;
+    }
+
+    @Step("Clear Cart")
+    public CartSteps clearCart(){
+        clearCartBtn.click();
+        return this;
+    }
+
+    @Step("Continue Purchase")
+    public CartSteps continuePurchase(){
+        continuePurchaseBtn.click();
+        return this;
+    }
 }
