@@ -72,7 +72,9 @@ public class PurchaseTest extends ChromeRunner implements PurchasePage {
     @Severity(SeverityLevel.NORMAL)
     @Description("Negative test case: Checking that if the field is filled, \"კომპანიის სახელწოდება\" should no longer be red.")
     public void checkFilledNameFieldColor(){
-        steps.fillNameField();
+        steps
+                .fillNameField()
+                .clickSendBtn();
         sleep(400);
         Assert.assertNotEquals(nameInputField.getCssValue("border-color"), "rgb(255, 0, 0)", "Verify if the field is filled, \"კომპანიის სახელწოდება\" should no longer be red.");
     }
