@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="added 10-13 test cases to cart page">
+    <list default="true" id="a9ae16e2-e165-4bfa-b87a-f70f51797ea0" name="Changes" comment="added 14-19 test cases and readme file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/PurchasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StepObject/PurchaseSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PurchaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObject/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepObject/CartSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepObject/CartSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilis/ChromeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilis/ChromeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +96,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="smartAcademy" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTest" />
+      <option name="MAIN_CLASS_NAME" value="PurchaseTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -108,10 +110,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/TTopuria/IdeaProjects/smartAcademy/testng.xml" />
+        <item itemvalue="TestNG.PurchaseTest" />
         <item itemvalue="TestNG.CartTest.checkPersons" />
         <item itemvalue="TestNG.CartTest" />
         <item itemvalue="TestNG.CartTest.checkProductsRemoval" />
-        <item itemvalue="TestNG.SearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675970323051</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added 14-19 test cases and readme file">
+      <created>1676585772964</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676585772964</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +195,7 @@
     <MESSAGE value="added test cases for cart page." />
     <MESSAGE value="updated pom.xml and workspace.xml" />
     <MESSAGE value="added 10-13 test cases to cart page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 10-13 test cases to cart page" />
+    <MESSAGE value="added 14-19 test cases and readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 14-19 test cases and readme file" />
   </component>
 </project>
