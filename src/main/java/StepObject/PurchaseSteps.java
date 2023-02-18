@@ -6,9 +6,8 @@ import io.qameta.allure.Step;
 
 public class PurchaseSteps implements PurchasePage, PurchaseData {
     @Step("Clicking on 'გაგზავნა' button")
-    public PurchaseSteps clickSendBtn(){
+    public void clickSendBtn(){
         sendBtn.click();
-        return this;
     }
     @Step("Get name field border color")
     public String getNameFieldColor(){
@@ -50,57 +49,50 @@ public class PurchaseSteps implements PurchasePage, PurchaseData {
         return phoneInputField.getAttribute("value");
     }
 
-    @Step("Fill the \"კომპანიის სახელწოდება\" field")
-    public PurchaseSteps fillNameField(){
-        nameInputField.sendKeys(testName);
+    @Step("Input Name")
+    public PurchaseSteps inputName(String value){
+        nameInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Input string in the \"კომპანიის სახელწოდება\" field")
-    public PurchaseSteps inputStringInCode(){
-        codeInputField.sendKeys(simpleString);
+    @Step("Input Code")
+    public PurchaseSteps inputCode(String value) {
+        codeInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Input less than 11 digits in the \"კომპანიის სახელწოდება\" field")
-    public PurchaseSteps inputLessDigitsInCode(){
-        codeInputField.sendKeys(lessElevenDigits);
+    @Step("Input Address")
+    public PurchaseSteps inputAddress(String value){
+        addressInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Input 12 digits in the \"კომპანიის სახელწოდება\" field")
-    public PurchaseSteps inputTwelveDigitsInCode(){
-        codeInputField.sendKeys(twelveDigits);
+    @Step("Input phone")
+    public PurchaseSteps inputPhone(String value){
+        phoneInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Input 11 digits in the \"კომპანიის სახელწოდება\" field")
-    public PurchaseSteps inputElevenDigitsInCode(){
-        codeInputField.sendKeys(elevenDigits);
+    @Step("Input Date")
+    public PurchaseSteps inputDate(String value){
+        dateInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Fill the \"ფაქტიური მისამართი\" field")
-    public PurchaseSteps fillAddressField(){
-        addressInputField.sendKeys(testAddress);
+    @Step("Input email")
+    public PurchaseSteps inputEmail(String value){
+        emailInputField.sendKeys(value);
         return this;
     }
 
-    @Step("Input string in the \"საკონტაქტო ნომერი\" field")
-    public PurchaseSteps inputStringInPhone(){
-        phoneInputField.sendKeys(simpleString);
-        return this;
-    }
-
-    @Step("Input less than 9 digits in the \"საკონტაქტო ნომერი\" field")
-    public PurchaseSteps inputLessDigitsInPhone(){
-        phoneInputField.sendKeys(lessNineDigits);
-        return this;
-    }
-
-    @Step("Input 12 digits in the \"საკონტაქტო ნომერი\" field")
-    public PurchaseSteps inputTwelveDigitsInPhone(){
-        phoneInputField.sendKeys(twelveDigits);
+    @Step("Clear all fields")
+    public PurchaseSteps clearFields(){
+        nameInputField.clear();
+        codeInputField.clear();
+        addressInputField.clear();
+        phoneInputField.clear();
+        dateInputField.clear();
+        emailInputField.clear();
         return this;
     }
 }

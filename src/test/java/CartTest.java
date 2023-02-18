@@ -18,7 +18,7 @@ public class CartTest extends ChromeRunner implements CartPage {
     @Description("Positive test case: Checking that popup with text: 'პროდუქტი წარმატებით დაემატა კალათაში' is displayed")
     public void checkMessage(){
         steps.addProductToCart();
-        sleep(200);
+        sleep(400);
         Assert.assertTrue(addedItemText.isDisplayed(), "Verify that 'პროდუქტი წარმატებით დაემატა კალათაში' is displayed");
     }
     @Test(priority = 2)
@@ -26,7 +26,7 @@ public class CartTest extends ChromeRunner implements CartPage {
     @Description("Positive test case: Checking that product title in cart is displayed after adding the product")
     public void checkProductTitle(){
         steps.goToCart();
-        sleep(200);
+        sleep(400);
         Assert.assertTrue(itemTitle.isDisplayed(), "Verify that product title is displayed");
         Assert.assertTrue(itemTitle.is(Condition.not(Condition.empty)), "Verify that product title is not empty");
     }
@@ -143,7 +143,7 @@ public class CartTest extends ChromeRunner implements CartPage {
                 .addGloves()
                 .goToCart()
                 .continuePurchase();
-        sleep(200);
+        sleep(400);
         Assert.assertTrue(juridicalPersonTxt.isDisplayed(), "Verify that \"იურიდიული პირი\" form is Displayed");
         Assert.assertTrue(physicalPersonTxt.isDisplayed(), "Verify that \"ფიზიკური პირი\" form is Displayed");
     }
