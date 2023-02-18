@@ -1,9 +1,10 @@
 package StepObject;
 
+import DataObject.PurchaseData;
 import PageObject.PurchasePage;
 import io.qameta.allure.Step;
 
-public class PurchaseSteps implements PurchasePage {
+public class PurchaseSteps implements PurchasePage, PurchaseData {
     @Step("Clicking on 'გაგზავნა' button")
     public PurchaseSteps clickSendBtn(){
         sendBtn.click();
@@ -51,55 +52,55 @@ public class PurchaseSteps implements PurchasePage {
 
     @Step("Fill the \"კომპანიის სახელწოდება\" field")
     public PurchaseSteps fillNameField(){
-        nameInputField.sendKeys("Test Name");
+        nameInputField.sendKeys(testName);
         return this;
     }
 
     @Step("Input string in the \"კომპანიის სახელწოდება\" field")
     public PurchaseSteps inputStringInCode(){
-        codeInputField.sendKeys("Test");
+        codeInputField.sendKeys(simpleString);
         return this;
     }
 
     @Step("Input less than 11 digits in the \"კომპანიის სახელწოდება\" field")
     public PurchaseSteps inputLessDigitsInCode(){
-        codeInputField.sendKeys("0123456789");
+        codeInputField.sendKeys(lessElevenDigits);
         return this;
     }
 
     @Step("Input 12 digits in the \"კომპანიის სახელწოდება\" field")
     public PurchaseSteps inputTwelveDigitsInCode(){
-        codeInputField.sendKeys("012345678912");
+        codeInputField.sendKeys(twelveDigits);
         return this;
     }
 
     @Step("Input 11 digits in the \"კომპანიის სახელწოდება\" field")
     public PurchaseSteps inputElevenDigitsInCode(){
-        codeInputField.sendKeys("01234567891");
+        codeInputField.sendKeys(elevenDigits);
         return this;
     }
 
     @Step("Fill the \"ფაქტიური მისამართი\" field")
     public PurchaseSteps fillAddressField(){
-        addressInputField.sendKeys("1, Test address");
+        addressInputField.sendKeys(testAddress);
         return this;
     }
 
     @Step("Input string in the \"საკონტაქტო ნომერი\" field")
     public PurchaseSteps inputStringInPhone(){
-        phoneInputField.sendKeys("Test");
+        phoneInputField.sendKeys(simpleString);
         return this;
     }
 
     @Step("Input less than 9 digits in the \"საკონტაქტო ნომერი\" field")
     public PurchaseSteps inputLessDigitsInPhone(){
-        phoneInputField.sendKeys("01234567");
+        phoneInputField.sendKeys(lessNineDigits);
         return this;
     }
 
     @Step("Input 12 digits in the \"საკონტაქტო ნომერი\" field")
     public PurchaseSteps inputTwelveDigitsInPhone(){
-        phoneInputField.sendKeys("012345678912");
+        phoneInputField.sendKeys(twelveDigits);
         return this;
     }
 }
